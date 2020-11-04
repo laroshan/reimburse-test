@@ -8,9 +8,9 @@ export default function NavBar() {
   return (
     <DetailConsumer>
       {(value) => {
-        const { navbarOpen } = value;
+        const { path } = value;
         return (
-          <Nav show={navbarOpen}>
+          <Nav show={path}>
             <img src={logo} alt="logo" />
 
             {/* <Hamburger onClick={() => setIsOpen(!isOpen)}> */}
@@ -42,11 +42,12 @@ const MenuLink = styled.a`
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  color: #67bc98;
+  color: white;
   transition: all 0.3s ease-in;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   &:hover {
     color: #7b7fda;
+    text-decoration: none;
   }
 `;
 
@@ -58,12 +59,14 @@ const Nav = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background: green;
+  background: #ee3934;
   top: 0;
   z-index: 1;
   width: 100%;
   left: 0;
   right: 0;
+  transform: ${(props) =>
+    props.show !== "/" ? "translateX(0)" : "translateX(-110%)"};
   /* transform: ${(props) =>
     props.show ? "translateY(0)" : "translateY(-100%)"}; */
   img {

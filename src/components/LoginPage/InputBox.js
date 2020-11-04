@@ -8,7 +8,7 @@ export default function InputBox() {
   return (
     <DetailConsumer>
       {(value) => {
-        const { handleNavbar, handleSidebar } = value;
+        const { handleNavbar } = value;
         return (
           <Container>
             <TitleWrapper>
@@ -65,6 +65,7 @@ const TitleWrapper = styled.div`
   h4 {
     text-align: center;
     font-size: 80px;
+    padding: 2rem;
   }
   h3 {
     color: #ff8d8d;
@@ -83,6 +84,9 @@ const Container = styled.div`
   justify-content: space-evenly;
   align-items: center;
   padding: 0 2rem;
+  Form {
+    padding: 0.5rem;
+  }
   /* @media (max-width: 900px) {
     width: 100vw;
     position: absolute;

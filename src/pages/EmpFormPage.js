@@ -13,7 +13,7 @@ export default function EmpFormPage() {
       <CardWrapper>
         <div className="container">
           <div className="row">
-            <div className="col-10 mx-auto col-sm-8 col-md-6 col-lg-4 y-3">
+            <div className="col-lg-6 ">
               <Link to="/medicalForm" className="card-link">
                 <div className="card">
                   <div className="img-container">
@@ -29,7 +29,7 @@ export default function EmpFormPage() {
                 </div>
               </Link>
             </div>
-            <div className="col-10 mx-auto col-sm-8 col-md-6 col-lg-4 y-3">
+            <div className="col -lg-6">
               <Link to="/expenseForm" className="card-link">
                 <div className="card">
                   <div className="img-container">
@@ -62,7 +62,7 @@ const CardWrapper = styled.div`
 
   left: 100px;
   align-items: center;
-  padding-top: 15rem;
+  padding-top: 10rem;
   .card {
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease-in;
