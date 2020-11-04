@@ -87,9 +87,9 @@ const Container = styled.div`
   Form {
     padding: 0.5rem;
   }
-  /* @media (max-width: 900px) {
-    width: 100vw;
+  @media (max-height: 750px) {
+    width: 100px;
     position: absolute;
-    padding: 0;
-  } */
+    padding: 2rem 0 0 0;
+  }
 `;

@@ -13,7 +13,7 @@ export default function EmpFormPage() {
       <CardWrapper>
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 ">
+            <div className="col-5 col-xcol-sm-5 col-lg-6 ">
               <Link to="/medicalForm" className="card-link">
                 <div className="card">
                   <div className="img-container">
@@ -29,7 +29,7 @@ export default function EmpFormPage() {
                 </div>
               </Link>
             </div>
-            <div className="col -lg-6">
+            <div className="col-5 col-sm-5 col -lg-6">
               <Link to="/expenseForm" className="card-link">
                 <div className="card">
                   <div className="img-container">
@@ -67,6 +67,7 @@ const CardWrapper = styled.div`
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease-in;
     height: 100%;
+  
   }
 
   .card:hover {
@@ -85,8 +86,12 @@ const CardWrapper = styled.div`
     align-items: center;
     text-align: center;
     font-size: 40px;
+    @media (max-width: 876px) {
+      font-size: 20px;
   }
+  ]
   .card-link:hover {
     text-decoration: none;
   }
+  
 `;

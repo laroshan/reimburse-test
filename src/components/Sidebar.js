@@ -61,7 +61,7 @@ const SideWrapper = styled.nav`
   @media (min-width: 576px) {
     width: 20rem;
   }
-  @media (max-width: 776px) {
+  @media (max-width: 876px) {
     display: none;
   }
   ul {
