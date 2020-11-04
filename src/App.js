@@ -30,6 +30,7 @@ function App() {
       <Sidebar className="sidebar" />
       <Switch>
         <Route path="/" exact component={Login} />
+
         <Route path="/forms" component={FormSelection} />
         <Route path="/medicalForm" component={Medical} />
         <Route path="/expenseForm" component={Expense} />
