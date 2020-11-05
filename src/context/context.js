@@ -5,8 +5,8 @@ const DetailContext = React.createContext();
 
 class DetailProvider extends Component {
   state = {
-    navbarOpen: false,
-    sidebarOpen: false,
+    navbarOpen: true,
+    sidebarOpen: true,
     links: linkData,
     path: "/",
   };

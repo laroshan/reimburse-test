@@ -6,8 +6,6 @@ import Medical from "./pages/EmpMedicalPage";
 import FormSelection from "./pages/EmpFormPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 //import styled from "styled-components";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
 import BcgImg from "./images/backgrundd.png";
 
 import { Route, Switch } from "react-router-dom";
@@ -25,8 +23,6 @@ function App() {
         position: "absolut",
       }}
     >
-      <Navbar className="navbar" />
-      <Sidebar className="sidebar" />
       <Switch>
         <Route path="/" exact component={Login} />
         <Route path="/forms" component={FormSelection} />

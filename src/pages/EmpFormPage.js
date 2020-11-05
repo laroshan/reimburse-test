@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar";
+import Sidebar from "../components/Sidebar";
 import {
   FaNotesMedical,
   FaReceipt,
@@ -10,10 +12,12 @@ import {
 export default function EmpFormPage() {
   return (
     <>
+      <Navbar />
+      <Sidebar />
       <CardWrapper>
         <div className="container">
           <div className="row">
-            <div className="col-5 col-xcol-sm-5 col-lg-6 ">
+            <div className="col-5 col-sm-4 col-lg-6 ">
               <Link to="/medicalForm" className="card-link">
                 <div className="card">
                   <div className="img-container">
@@ -29,7 +33,7 @@ export default function EmpFormPage() {
                 </div>
               </Link>
             </div>
-            <div className="col-5 col-sm-5 col -lg-6">
+            <div className="col-5 col-sm-4 col-lg-6">
               <Link to="/expenseForm" className="card-link">
                 <div className="card">
                   <div className="img-container">

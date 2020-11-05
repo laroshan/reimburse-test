@@ -41,8 +41,8 @@ const SideWrapper = styled.nav`
 
   /* transform: ${(props) =>
     props.show ? "translateX(0)" : "translateX(-110%)"}; */
-  transform: ${(props) =>
-    props.show !== "/" ? "translateX(0)" : "translateX(-110%)"};
+  /* transform: ${(props) =>
+    props.show !== "/" ? "translateX(0)" : "translateX(-110%)"}; */
   //beacuse we add overlay
   .sidebar-link {
     display: block;

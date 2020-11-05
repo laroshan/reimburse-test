@@ -65,8 +65,8 @@ const Nav = styled.div`
   width: 100%;
   left: 0;
   right: 0;
-  transform: ${(props) =>
-    props.show !== "/" ? "translateX(0)" : "translateX(-110%)"};
+  /* transform: ${(props) =>
+    props.show !== "/" ? "translateX(0)" : "translateX(-110%)"}; */
   /* transform: ${(props) =>
     props.show ? "translateY(0)" : "translateY(-100%)"}; */
   img {
