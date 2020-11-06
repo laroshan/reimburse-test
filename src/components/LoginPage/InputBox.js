@@ -77,7 +77,7 @@ const TitleWrapper = styled.div`
 const Container = styled.div`
   min-width: 400px;
   backdrop-filter: blur(35px);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -86,6 +86,9 @@ const Container = styled.div`
   padding: 0 2rem;
   Form {
     padding: 0.5rem;
+    @media (max-width: 1000px) {
+      padding: 0;
+    }
   }
   @media (max-width: 1000px) {
     min-width: 200px;

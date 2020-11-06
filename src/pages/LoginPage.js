@@ -33,6 +33,9 @@ const LineWrap = styled.div`
   .container {
     display: flex;
   }
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 const LoginWrap = styled.div`
