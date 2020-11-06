@@ -34,16 +34,8 @@ const SideWrapper = styled.nav`
   top: 55px;
   width: 100%;
   height: 100%;
-
   background: rgba(159, 159, 160, 0.1);
-  //border: 3px solid blue;
   z-index: 1;
-
-  /* transform: ${(props) =>
-    props.show ? "translateX(0)" : "translateX(-110%)"}; */
-  /* transform: ${(props) =>
-    props.show !== "/" ? "translateX(0)" : "translateX(-110%)"}; */
-  //beacuse we add overlay
   .sidebar-link {
     display: block;
     font-size: 1.5rem;
@@ -61,7 +53,7 @@ const SideWrapper = styled.nav`
   @media (min-width: 576px) {
     width: 20rem;
   }
-  @media (max-width: 876px) {
+  @media (max-width: 1000px) {
     display: none;
   }
   ul {

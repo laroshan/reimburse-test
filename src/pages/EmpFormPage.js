@@ -17,14 +17,11 @@ export default function EmpFormPage() {
       <CardWrapper>
         <div className="container">
           <div className="row">
-            <div className="col-5 col-sm-4 col-lg-6 ">
+            <div className="col-6 col-sm-6 col-lg-6 ">
               <Link to="/medicalForm" className="card-link">
                 <div className="card">
                   <div className="img-container">
-                    <FaNotesMedical
-                      className="card-img-top p-5"
-                      style={{ height: "250px" }}
-                    />
+                    <FaNotesMedical className="card-img-top p-5" />
                   </div>
                   <div className="card-body">
                     <p className="form-title">Medical Form</p>
@@ -33,14 +30,11 @@ export default function EmpFormPage() {
                 </div>
               </Link>
             </div>
-            <div className="col-5 col-sm-4 col-lg-6">
+            <div className="col-6 col-sm-6 col-lg-6">
               <Link to="/expenseForm" className="card-link">
                 <div className="card">
                   <div className="img-container">
-                    <FaReceipt
-                      className="card-img-top p-5"
-                      style={{ height: "250px" }}
-                    />
+                    <FaReceipt className="card-img-top p-5" />
                   </div>
                   <div className="card-body">
                     <p>Expense Form</p>
@@ -57,13 +51,6 @@ export default function EmpFormPage() {
 }
 
 const CardWrapper = styled.div`
-  /* background-image: url("./images/backgrund.png");
-  position: fixed;
-  background-position: center;
-  background-size: cover;
-  min-width: 100%;
-  min-height: 100%; */
-
   left: 100px;
   align-items: center;
   padding-top: 10rem;
@@ -71,7 +58,6 @@ const CardWrapper = styled.div`
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease-in;
     height: 100%;
-  
   }
 
   .card:hover {
@@ -81,6 +67,10 @@ const CardWrapper = styled.div`
 
   .card-img-top {
     transition: all 0.3s ease-in;
+    height: 250px;
+    @media (max-width: 900px) {
+      height: 200px;
+    }
   }
   .card:hover .card-img-top {
     transform: scale(1.15);
@@ -90,12 +80,14 @@ const CardWrapper = styled.div`
     align-items: center;
     text-align: center;
     font-size: 40px;
-    @media (max-width: 876px) {
+    @media (max-width: 900px) {
       font-size: 20px;
+    }
   }
-  ]
   .card-link:hover {
     text-decoration: none;
   }
-  
+  @media (max-width: 900px) {
+    padding-top: 10rem;
+  }
 `;
