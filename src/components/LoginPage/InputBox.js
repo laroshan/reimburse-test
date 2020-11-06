@@ -88,6 +88,6 @@ const Container = styled.div`
     padding: 0.5rem;
   }
   @media (max-width: 1000px) {
-    min-width: 300px;
+    min-width: 200px;
   }
 `;
