@@ -87,9 +87,7 @@ const Container = styled.div`
   Form {
     padding: 0.5rem;
   }
-  @media (max-height: 750px) {
-    width: 100px;
-    position: absolute;
-    padding: 2rem 0 0 0;
+  @media (max-width: 1000px) {
+    min-width: 300px;
   }
 `;
