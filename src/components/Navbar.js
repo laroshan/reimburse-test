@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { DetailConsumer } from "../context";
 import { FaBell, FaSadCry, FaCaretDown } from "react-icons/fa";
 import Dropdown from "./DropDown";
-import NotificationDrop from "./";
+// import NotificationDrop from "./";
 
 import Profile from "../images/profile.jpg";
 
