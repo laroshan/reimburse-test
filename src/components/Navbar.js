@@ -1,18 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../logos/Tonly.svg";
 import styled from "styled-components";
 import { DetailConsumer } from "../context";
-import { FaBell, FaRegUser, FaArrowAltCircleDown } from "react-icons/fa";
+import { FaBell, FaSadCry, FaCaretDown } from "react-icons/fa";
+import Dropdown from "./DropDown";
+import NotificationDrop from "./";
+
+import Profile from "../images/profile.jpg";
 
 export default function NavBar() {
   return (
     <DetailConsumer>
       {(value) => {
-        const { path } = value;
         return (
-          <Nav show={path}>
+          <Nav>
+            {/* <FaBars /> */}
             <img src={logo} alt="logo" />
-
+            <i className={FaSadCry} />
             {/* <Hamburger onClick={() => setIsOpen(!isOpen)}> */}
             <span />
             <span />
@@ -22,12 +26,20 @@ export default function NavBar() {
               <MenuLink>
                 <FaBell />
               </MenuLink>
-              <MenuLink>Jhon Cena</MenuLink>
+              <MenuLink>Jhon Doe</MenuLink>
+
               <MenuLink>
-                <FaRegUser />
-              </MenuLink>
-              <MenuLink href="">
-                <FaArrowAltCircleDown />
+                {/* <img src={Profile} alt="profile" /> */}
+                <div className="container">
+                  <div className="row">
+                    <div className="col col-xs-6 col-md-4">
+                      <img src={Profile} alt="profile" />
+                    </div>
+                    <div className="col col-xs-6 col-md-4">
+                      <FaCaretDown />
+                    </div>
+                  </div>
+                </div>
               </MenuLink>
             </Menu>
           </Nav>
@@ -49,6 +61,9 @@ const MenuLink = styled.a`
     color: #7b7fda;
     text-decoration: none;
   }
+  /* img {
+    border-radius: ;
+  } */
 `;
 
 const Nav = styled.div`
@@ -65,10 +80,6 @@ const Nav = styled.div`
   width: 100%;
   left: 0;
   right: 0;
-  /* transform: ${(props) =>
-    props.show !== "/" ? "translateX(0)" : "translateX(-110%)"}; */
-  /* transform: ${(props) =>
-    props.show ? "translateY(0)" : "translateY(-100%)"}; */
   img {
     height: 100%;
     width: 50px;

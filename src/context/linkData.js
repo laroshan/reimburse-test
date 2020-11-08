@@ -1,35 +1,41 @@
-import { FaBell, FaRegUser, FaArrowAltCircleDown } from "react-icons/fa";
+import {
+  FaAddressCard,
+  FaFileAlt,
+  FaListAlt,
+  FaNewspaper,
+  FaMale,
+} from "react-icons/fa";
 
 export const linkData = [
   {
     id: 1,
     text: "get started",
-    icon: <FaBell />,
+    icon: <FaNewspaper />,
     path: "/forms",
   },
   {
     id: 2,
     text: "Expense",
-    icon: <FaRegUser />,
+    icon: <FaListAlt />,
     path: "/ff",
   },
   {
     id: 3,
     text: "Techlead deatils",
-    icon: <FaBell />,
+    icon: <FaMale />,
     path: "/medicalForm",
   },
   {
     id: 4,
     text: "Employee details",
-    icon: <FaArrowAltCircleDown />,
+    icon: <FaAddressCard />,
 
     path: "/expenseform",
   },
   {
     id: 5,
     text: "report",
-    icon: <FaArrowAltCircleDown />,
+    icon: <FaFileAlt />,
     path: "/nn",
   },
 ];

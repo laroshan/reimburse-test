@@ -50,7 +50,7 @@ const Form = styled.form`
     margin: 1rem 0;
     box-shadow: 0px 14px 9px -15px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
-    background-color: #70edb9;
+    background-color: #a2a2a3;
     color: #fff;
     font-weight: 600;
     cursor: pointer;

@@ -5,7 +5,6 @@ import Expense from "./pages/EmpExpensePage";
 import Medical from "./pages/EmpMedicalPage";
 import FormSelection from "./pages/EmpFormPage";
 import "bootstrap/dist/css/bootstrap.min.css";
-//import styled from "styled-components";
 import BcgImg from "./images/backgrundd.png";
 
 import { Route, Switch } from "react-router-dom";
@@ -16,7 +15,7 @@ function App() {
       class="bg_image"
       style={{
         backgroundImage: `url(${BcgImg})`,
-        height: "100vh",
+        minHeight: "100vh",
         //color: "#f5f5f5",
         backgroundPosition: "center",
         backgroundSize: "cover",

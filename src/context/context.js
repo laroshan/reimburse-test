@@ -8,13 +8,13 @@ class DetailProvider extends Component {
     navbarOpen: true,
     sidebarOpen: true,
     links: linkData,
-    path: "/",
   };
   handleNavbar = () => {
     this.setState({ navbarOpen: !this.state.navbarOpen });
-    this.setState({ sidebarOpen: !this.state.sidebarOpen });
-    this.setState({ path: "/forms" });
   };
+  handleSidebar=() =>{
+    this.setState({sidebarOpen:!this.state.sidebarOpen});
+  }
 
   render() {
     return (

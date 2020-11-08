@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 import styled from "styled-components";
-import { FaCaretDown, FaPlusCircle } from "react-icons/fa";
-import TaskList from "./TaskListM";
+import TaskList from "./TaskListE";
+import { FaPlusCircle } from "react-icons/fa";
 
-export default class MedicalForm extends React.Component {
+export default class ExpenseForm extends Component {
   state = {
     taskList: [
       {
@@ -92,7 +92,7 @@ export default class MedicalForm extends React.Component {
               <div className="col-sm-1"></div>
               <div className="col-sm-10">
                 <div className="card">
-                  <div className="card-header text-center">Medical Claim</div>
+                  <div className="card-header text-center">Expense Claim</div>
                   <div className="card-body">
                     <div className="row">
                       <div className="col-sm-4">
@@ -108,7 +108,7 @@ export default class MedicalForm extends React.Component {
                       </div>
                       <div className="col-sm-4">
                         <div className="form-group ">
-                          <label className="required">Doctor Name</label>
+                          <label className="required">Project</label>
                           <input
                             type="text"
                             name="doctor"
@@ -131,26 +131,6 @@ export default class MedicalForm extends React.Component {
                     </div>
                     <div className="row">
                       <div className="col-sm-4">
-                        <label className="form-check-label">Claim For</label>
-                        <div className="form-check">
-                          <input
-                            type="radio"
-                            value="Self"
-                            name="claimfor"
-                            className="form-check-input"
-                          />{" "}
-                          Self <br></br>
-                          <input
-                            type="radio"
-                            value="Dependent"
-                            name="claimfor"
-                            className="form-check-input"
-                          />{" "}
-                          Dependent
-                          <FaCaretDown />
-                        </div>
-                      </div>
-                      <div className="col-sm-4">
                         <div className="form-group ">
                           <label className="required">Tech Lead ID</label>
                           <input
@@ -160,29 +140,6 @@ export default class MedicalForm extends React.Component {
                             className="form-control"
                             //placeholder="Enter Date"
                           />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="row">
-                      <div className="col-sm-4">
-                        <label className="form-check-label">
-                          Payment Method
-                        </label>
-                        <div className="form-check">
-                          <input
-                            type="radio"
-                            value="Bank"
-                            name="paymentmethod"
-                            className="form-check-input"
-                          />{" "}
-                          Bank <br></br>
-                          <input
-                            type="radio"
-                            value="Cash"
-                            name="paymentmethod"
-                            className="form-check-input"
-                          />{" "}
-                          Cash
                         </div>
                       </div>
                       <div className="col-sm-4">
@@ -196,14 +153,51 @@ export default class MedicalForm extends React.Component {
                         </div>
                       </div>
                     </div>
+                    <div className="row">
+                      <div className="col-sm-4">
+                        <div className="form-group ">
+                          <label className="form-check-label">
+                            Payment Method
+                          </label>
+                          <div className="form-check">
+                            <input
+                              type="radio"
+                              value="Bank"
+                              name="paymentmethod"
+                              className="form-check-input"
+                            />{" "}
+                            Bank <br></br>
+                            <input
+                              type="radio"
+                              value="Cash"
+                              name="paymentmethod"
+                              className="form-check-input"
+                            />{" "}
+                            Cash
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-sm-4">
+                        <div className="form-group ">
+                          <label className="required">Submission Date</label>
+
+                          <input
+                            type="date"
+                            name="submissiondate"
+                            id="submissiondate"
+                            className="form-control"
+                            //placeholder="Enter Date"
+                          />
+                        </div>
+                      </div>
+                    </div>
                     <table className="table">
                       <thead>
                         <tr>
-                          <th className="required">Date</th>
-                          <th className="required">Description</th>
-                          <th>Place</th>
-                          <th>Receipt N0.</th>
-                          <th>Receipt</th>
+                          <th className="required">Project Name</th>
+                          <th className="required">Task</th>
+                          <th>Notes</th>
+                          <th>Status</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -217,7 +211,7 @@ export default class MedicalForm extends React.Component {
                         <tr>
                           <td colSpan="4">
                             <button
-                              onClick={this.addNewRow}
+                              ///onClick={this.addNewRow}
                               type="button"
                               className="btn btn-primary text-center"
                             >

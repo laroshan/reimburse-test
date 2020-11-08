@@ -1,10 +1,14 @@
 import React from "react";
-import Title from "../components/Title";
+import ExpenseForm from "../components/ExpensePage/ExpenseForm";
+import NavBar from "../components/Navbar";
+import SideBar from "../components/Sidebar";
 
 export default function EmpExpensePage() {
   return (
     <>
-      <Title title="Expense Claim" />
+      <NavBar />
+      <SideBar />
+      <ExpenseForm />
     </>
   );
 }
