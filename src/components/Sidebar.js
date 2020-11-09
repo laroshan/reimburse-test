@@ -7,9 +7,9 @@ export default function SideBar() {
   return (
     <DetailConsumer>
       {(value) => {
-        const { links, path } = value;
+        const { links, open } = value;
         return (
-          <SideWrapper show={path}>
+          <SideWrapper open={open}>
             <ul>
               {links.map((link) => {
                 return (
@@ -31,7 +31,7 @@ export default function SideBar() {
 
 const SideWrapper = styled.nav`
   position: fixed;
-  top: 55px;
+  top: 65px;
   width: 100%;
   height: 100%;
   background: rgba(159, 159, 160, 0.1);
@@ -54,7 +54,7 @@ const SideWrapper = styled.nav`
     width: 20rem;
   }
   @media (max-width: 1000px) {
-    display: none;
+    display: ${(props) => (props.open ? "none" : "flex")};
   }
   ul {
     list-style-type: none;

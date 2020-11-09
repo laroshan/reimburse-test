@@ -8,13 +8,17 @@ class DetailProvider extends Component {
     navbarOpen: true,
     sidebarOpen: true,
     links: linkData,
+    open: true,
   };
   handleNavbar = () => {
     this.setState({ navbarOpen: !this.state.navbarOpen });
   };
-  handleSidebar=() =>{
-    this.setState({sidebarOpen:!this.state.sidebarOpen});
-  }
+  handleSidebar = () => {
+    this.setState({ sidebarOpen: !this.state.sidebarOpen });
+  };
+  handleOpen = () => {
+    this.setState({ open: !this.state.open });
+  };
 
   render() {
     return (
@@ -23,6 +27,7 @@ class DetailProvider extends Component {
           ...this.state,
           handleNavbar: this.handleNavbar,
           handleSidebar: this.handleSidebar,
+          handleOpen: this.handleOpen,
         }}
       >
         {this.props.children}{" "}

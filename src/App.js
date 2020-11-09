@@ -16,6 +16,7 @@ function App() {
       style={{
         backgroundImage: `url(${BcgImg})`,
         minHeight: "100vh",
+        minWidth: "100vw",
         //color: "#f5f5f5",
         backgroundPosition: "center",
         backgroundSize: "cover",

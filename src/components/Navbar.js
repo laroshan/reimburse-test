@@ -1,32 +1,38 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from "../logos/Tonly.svg";
 import styled from "styled-components";
 import { DetailConsumer } from "../context";
-import { FaBell, FaSadCry, FaCaretDown } from "react-icons/fa";
-import Dropdown from "./DropDown";
-// import NotificationDrop from "./";
+import { FaBell, FaCaretDown, FaBars } from "react-icons/fa";
+//import Dropdown from "./DropDown";
 
 import Profile from "../images/profile.jpg";
 
 export default function NavBar() {
+  // const [click, setClick] = useState(true);
+  //dropdown
+  // const [dropdown, setDropdown] = useState(true);
+  // const handleClick = () => {
+  //   setClick(!click);
+  // };
+  // const closeMobileMenu = () => {
+  //   setClick(false);
+  // };
   return (
     <DetailConsumer>
       {(value) => {
+        const { handleOpen } = value;
         return (
-          <Nav>
-            {/* <FaBars /> */}
-            <img src={logo} alt="logo" />
-            <i className={FaSadCry} />
-            {/* <Hamburger onClick={() => setIsOpen(!isOpen)}> */}
-            <span />
-            <span />
-            <span />
-            {/*  </Hamburger> */}
+          <NavWrapper>
+            <div>
+              <FaBars className="fa-bar" onClick={handleOpen} />
+              <img src={logo} alt="logo" className="logo" />
+            </div>
+
             <Menu>
               <MenuLink>
                 <FaBell />
               </MenuLink>
-              <MenuLink>Jhon Doe</MenuLink>
+              <h4>Jhon Doe</h4>
 
               <MenuLink>
                 {/* <img src={Profile} alt="profile" /> */}
@@ -42,7 +48,7 @@ export default function NavBar() {
                 </div>
               </MenuLink>
             </Menu>
-          </Nav>
+          </NavWrapper>
         );
       }}
     </DetailConsumer>
@@ -60,16 +66,15 @@ const MenuLink = styled.a`
   &:hover {
     color: #7b7fda;
     text-decoration: none;
+    background-color: transparent;
+    transition: all 0.2s ease-out;
   }
-  /* img {
-    border-radius: ;
-  } */
 `;
 
-const Nav = styled.div`
+const NavWrapper = styled.div`
   position: -webkit-sticky;
   position: sticky;
-  padding: 0 2rem;
+  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -80,10 +85,33 @@ const Nav = styled.div`
   width: 100%;
   left: 0;
   right: 0;
-  img {
-    height: 100%;
-    width: 50px;
-    position: absolute;
+  /*  */
+  .logo {
+    color: white;
+    justify-self: start;
+    margin-left: 5px;
+    // cursor: pointer;
+    text-decoration: none;
+    //position: absolute;
+    width: 70px;
+    //font-weight: bolder;
+  }
+  .fa-bar {
+    display: none;
+  }
+  @media screen and (max-width: 1000px) {
+    .fa-bar {
+      color: white;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      position: absolute;
+      margin-top: 20px;
+    }
+    .logo {
+      margin-left: 30px;
+    }
   }
 `;
 
@@ -92,11 +120,17 @@ const Menu = styled.div`
   justify-content: space-between;
   align-items: center;
   position: relative;
-  /* @media (max-width: 768px) {
-    overflow: hidden;
-    flex-direction: column;
-    max-height: ${({ isOpen }) => (isOpen ? "300px" : "0")};
-    transition: max-height 0.3s ease-in;
-    width: 100%;
-  } */
+  img {
+    height: 100%;
+    width: 50px;
+    position: absolute;
+  }
+  h4 {
+    padding: 0rem 0rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in;
+    font-size: 1.2rem;
+  }
 `;
