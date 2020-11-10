@@ -1,11 +1,12 @@
-import "./App.css";
 import Login from "./pages/LoginPage";
 import Default from "./pages/DefaultPage";
 import Expense from "./pages/EmpExpensePage";
 import Medical from "./pages/EmpMedicalPage";
 import FormSelection from "./pages/EmpFormPage";
 import "bootstrap/dist/css/bootstrap.min.css";
-import BcgImg from "./images/backgrundd.png";
+import BcgImg from "./images/back.svg";
+// import BcgImg2 from "./images/backgrundd.png";
+import EmpReport from "./pages/EmpReport";
 
 import { Route, Switch } from "react-router-dom";
 
@@ -20,7 +21,7 @@ function App() {
         //color: "#f5f5f5",
         backgroundPosition: "center",
         backgroundSize: "cover",
-        position: "absolut",
+        position: "absolute",
       }}
     >
       <Switch>
@@ -28,6 +29,7 @@ function App() {
         <Route path="/forms" component={FormSelection} />
         <Route path="/medicalForm" component={Medical} />
         <Route path="/expenseForm" component={Expense} />
+        <Route path="/empReport" component={EmpReport} />
         <Route component={Default} />
       </Switch>
     </section>

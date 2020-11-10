@@ -211,7 +211,7 @@ export default class ExpenseForm extends Component {
                         <tr>
                           <td colSpan="4">
                             <button
-                              ///onClick={this.addNewRow}
+                              onClick={this.addNewRow}
                               type="button"
                               className="btn btn-primary text-center"
                             >

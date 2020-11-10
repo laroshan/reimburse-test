@@ -3,20 +3,20 @@ import logo from "../logos/Tonly.svg";
 import styled from "styled-components";
 import { DetailConsumer } from "../context";
 import { FaBell, FaCaretDown, FaBars } from "react-icons/fa";
-//import Dropdown from "./DropDown";
 
 import Profile from "../images/profile.jpg";
 
 export default function NavBar() {
   // const [click, setClick] = useState(true);
   //dropdown
-  // const [dropdown, setDropdown] = useState(true);
+
   // const handleClick = () => {
   //   setClick(!click);
   // };
   // const closeMobileMenu = () => {
   //   setClick(false);
   // };
+
   return (
     <DetailConsumer>
       {(value) => {
@@ -29,12 +29,13 @@ export default function NavBar() {
             </div>
 
             <Menu>
-              <MenuLink>
-                <FaBell />
-              </MenuLink>
-              <h4>Jhon Doe</h4>
-
-              <MenuLink>
+              <li className="nav-item">
+                <FaBell className="nav-links" />
+              </li>
+              <li className="nav-item">
+                <h4>Jhon Doe</h4>
+              </li>
+              <li className="nav-item">
                 {/* <img src={Profile} alt="profile" /> */}
                 <div className="container">
                   <div className="row">
@@ -46,7 +47,7 @@ export default function NavBar() {
                     </div>
                   </div>
                 </div>
-              </MenuLink>
+              </li>
             </Menu>
           </NavWrapper>
         );
@@ -55,21 +56,21 @@ export default function NavBar() {
   );
 }
 
-const MenuLink = styled.a`
-  padding: 1rem 1rem;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  transition: all 0.3s ease-in;
-  font-size: 1.2rem;
-  &:hover {
-    color: #7b7fda;
-    text-decoration: none;
-    background-color: transparent;
-    transition: all 0.2s ease-out;
-  }
-`;
+// const MenuLink = styled.a`
+//   padding: 1rem 1rem;
+//   cursor: pointer;
+//   text-align: center;
+//   text-decoration: none;
+//   color: white;
+//   transition: all 0.3s ease-in;
+//   font-size: 1.2rem;
+//   &:hover {
+//     color: #7b7fda;
+//     text-decoration: none;
+//     background-color: transparent;
+//     transition: all 0.2s ease-out;
+//   }
+// `;
 
 const NavWrapper = styled.div`
   position: -webkit-sticky;
@@ -115,16 +116,13 @@ const NavWrapper = styled.div`
   }
 `;
 
-const Menu = styled.div`
+const Menu = styled.ul`
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  img {
-    height: 100%;
-    width: 50px;
-    position: absolute;
-  }
+  list-style: none;
+
   h4 {
     padding: 0rem 0rem;
     text-align: center;
@@ -132,5 +130,16 @@ const Menu = styled.div`
     color: white;
     transition: all 0.3s ease-in;
     font-size: 1.2rem;
+  }
+  img {
+    height: 100%;
+    width: 50px;
+    position: relative;
+  }
+  .nav-item {
+    display: flex;
+    align-items: center;
+    padding: 0rem 0.5rem;
+    /* height: 50px; */
   }
 `;

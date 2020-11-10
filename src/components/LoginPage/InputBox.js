@@ -8,18 +8,18 @@ export default function InputBox() {
   return (
     <DetailConsumer>
       {(value) => {
-        const { handleNavbar } = value;
+        const { handleLogin, isLogged } = value;
         return (
           <Container>
             <TitleWrapper>
               <h4>Tyche</h4>
               <h3>Welcome To Tyche</h3>
             </TitleWrapper>
-            <Form>
+            <Form onSubmit={console.log(isLogged)}>
               <Input placeholder="User Name" />
               <Input type="password" placeholder="Password" />
               <Link to="/forms">
-                <button type="submit" onClick={handleNavbar}>
+                <button type="submit" onClick={handleLogin}>
                   Login
                 </button>
               </Link>
@@ -76,7 +76,7 @@ const TitleWrapper = styled.div`
 
 const Container = styled.div`
   min-width: 400px;
-  backdrop-filter: blur(35px);
+  /* backdrop-filter: blur(35px); */
   background-color: transparent;
   height: 100%;
   display: flex;

@@ -13,12 +13,20 @@ export default function SideBar() {
             <ul>
               {links.map((link) => {
                 return (
-                  <li key={link.id}>
-                    <Link className="sidebar-link" to={link.path}>
-                      {link.icon}
-                      <span>{link.text}</span>
-                    </Link>
-                  </li>
+                  <div
+                    className={
+                      window.location.pathname === link.path
+                        ? "active"
+                        : "non-active"
+                    }
+                  >
+                    <li key={link.id}>
+                      <Link className="sidebar-link" to={link.path}>
+                        {link.icon}
+                        <span>{link.text}</span>
+                      </Link>
+                    </li>
+                  </div>
                 );
               })}
             </ul>
@@ -31,11 +39,13 @@ export default function SideBar() {
 
 const SideWrapper = styled.nav`
   position: fixed;
-  top: 65px;
+  top: 70px;
+
   width: 100%;
   height: 100%;
   background: rgba(159, 159, 160, 0.1);
   z-index: 1;
+
   .sidebar-link {
     display: block;
     font-size: 1.5rem;
@@ -47,7 +57,7 @@ const SideWrapper = styled.nav`
   .sidebar-link:hover {
     background: #00adee;
     color: white;
-    /* padding: 0.5rem 0.5rem 0.5rem 2rem; */
+    /* padding: 0.5rem 0.5rem 0.5rem 2rem;   */
     text-decoration: none;
   }
   @media (min-width: 576px) {
@@ -55,14 +65,19 @@ const SideWrapper = styled.nav`
   }
   @media (max-width: 1000px) {
     display: ${(props) => (props.open ? "none" : "flex")};
+    background: rgba(255, 255, 255, 0.7);
   }
   ul {
     list-style-type: none;
+    padding: 0;
   }
   span {
     padding: 0.5rem 0.5rem;
   }
   li {
-    padding-top: 0.5rem;
+    padding: 1rem;
+  }
+  .active {
+    border-left: 4px solid red;
   }
 `;

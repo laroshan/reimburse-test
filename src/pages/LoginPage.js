@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../logos/tycheww.svg";
+import Logo from "../logos/logo.svg";
 import styled from "styled-components";
 import InputBox from "../components/LoginPage/InputBox";
 

@@ -1,10 +1,14 @@
 import React from "react";
 import Hero from "../components/Hero";
-import defaultBcg from "../images/000-404.png";
+import NavBar from "../components/Navbar";
+import SideBar from "../components/Sidebar";
+import defaultBcg from "../images/original.jpg";
 
 export default function DefaultPage() {
   return (
     <>
+      <NavBar />
+      <SideBar />
       <Hero
         img={defaultBcg}
         title="404 error"

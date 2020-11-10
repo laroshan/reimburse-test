@@ -1,9 +1,8 @@
 import React from "react";
 import MedicalForm from "../components/MedicalPage/MedicalForm";
-//import Title from "../components/Title";
+
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
-import Dropdown from "../components/DropDown";
 
 export default function EmpMedicalPage() {
   return (
@@ -11,7 +10,6 @@ export default function EmpMedicalPage() {
       <Navbar />
       <Sidebar />
       {/* {dropdown && <Dropdown />} */}
-      <Dropdown />
       <MedicalForm />
     </>
   );

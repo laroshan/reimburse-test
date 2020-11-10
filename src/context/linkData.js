@@ -12,18 +12,21 @@ export const linkData = [
     text: "get started",
     icon: <FaNewspaper />,
     path: "/forms",
+    active: true,
   },
   {
     id: 2,
     text: "Expense",
     icon: <FaListAlt />,
     path: "/ff",
+    active: false,
   },
   {
     id: 3,
     text: "Techlead deatils",
     icon: <FaMale />,
     path: "/medicalForm",
+    active: false,
   },
   {
     id: 4,
@@ -31,11 +34,13 @@ export const linkData = [
     icon: <FaAddressCard />,
 
     path: "/expenseform",
+    active: false,
   },
   {
     id: 5,
     text: "report",
     icon: <FaFileAlt />,
-    path: "/nn",
+    path: "/empReport",
+    active: false,
   },
 ];
