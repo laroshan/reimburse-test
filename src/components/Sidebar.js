@@ -7,7 +7,7 @@ export default function SideBar() {
   return (
     <DetailConsumer>
       {(value) => {
-        const { links, open } = value;
+        const { links, open, handleOpen } = value;
         return (
           <SideWrapper open={open}>
             <ul>
@@ -21,7 +21,11 @@ export default function SideBar() {
                     }
                   >
                     <li key={link.id}>
-                      <Link className="sidebar-link" to={link.path}>
+                      <Link
+                        className="sidebar-link"
+                        to={link.path}
+                        onClick={handleOpen}
+                      >
                         {link.icon}
                         <span>{link.text}</span>
                       </Link>
