@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { FaCaretDown, FaPlusCircle } from "react-icons/fa";
+import { FaPlusCircle } from "react-icons/fa";
 import TaskList from "./TaskListM";
 
 export default class MedicalForm extends React.Component {
@@ -146,8 +146,15 @@ export default class MedicalForm extends React.Component {
                             name="claimfor"
                             className="form-check-input"
                           />{" "}
-                          Dependent
-                          <FaCaretDown />
+                          <select
+                            class="custom-select mr-sm-2"
+                            id="inlineFormCustomSelect"
+                          >
+                            <option selected>Dependent...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
                         </div>
                       </div>
                       <div className="col-sm-4">
@@ -196,7 +203,7 @@ export default class MedicalForm extends React.Component {
                         </div>
                       </div>
                     </div>
-                    <table className="table">
+                    <table className="table table-responsive">
                       <thead>
                         <tr>
                           <th className="required">Date</th>
@@ -204,6 +211,7 @@ export default class MedicalForm extends React.Component {
                           <th>Place</th>
                           <th>Receipt N0.</th>
                           <th>Receipt</th>
+                          <th></th>
                         </tr>
                       </thead>
                       <tbody>

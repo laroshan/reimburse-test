@@ -39,7 +39,7 @@ export default function Footer() {
 const FooterWrapper = styled.footer`
   background: #ea262a;
   color: white;
-  position: relative;
+  /* position: absolute; */
   left: 0;
   bottom: 0;
   right: 0;

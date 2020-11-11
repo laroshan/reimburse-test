@@ -65,7 +65,7 @@ const SideWrapper = styled.nav`
   }
   @media (max-width: 1000px) {
     display: ${(props) => (props.open ? "none" : "flex")};
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 1.2);
   }
   ul {
     list-style-type: none;

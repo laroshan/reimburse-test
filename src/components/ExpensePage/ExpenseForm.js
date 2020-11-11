@@ -191,13 +191,15 @@ export default class ExpenseForm extends Component {
                         </div>
                       </div>
                     </div>
-                    <table className="table">
+                    <table className="table table-responsive">
                       <thead>
                         <tr>
-                          <th className="required">Project Name</th>
-                          <th className="required">Task</th>
-                          <th>Notes</th>
-                          <th>Status</th>
+                          <th className="required">Date</th>
+                          <th className="required">Description</th>
+                          <th>Place</th>
+                          <th>Receipt N0.</th>
+                          <th>Receipt</th>
+                          <th></th>
                         </tr>
                       </thead>
                       <tbody>

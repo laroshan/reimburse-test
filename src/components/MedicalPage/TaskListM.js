@@ -1,5 +1,5 @@
 import React from "react";
-import { FaTrash, FaPaperclip } from "react-icons/fa";
+import { FaTrash } from "react-icons/fa";
 
 const TaskList = (props) => {
   return props.taskList.map((val, idx) => {
@@ -62,7 +62,12 @@ const TaskList = (props) => {
             </div>
           </div> */}
           {""}
-          <FaPaperclip />
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="customFile" />
+            <label class="custom-file-label" for="customFile">
+              Choose file
+            </label>
+          </div>
         </td>
         <td>
           {/* {idx === 0 ? (
