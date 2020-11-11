@@ -1,10 +1,9 @@
 import React from "react";
 import { DetailConsumer } from "../../context";
 import styled from "styled-components";
-
 export default function Expense() {
   return (
-    <div>
+    <ExpenseWrap>
       <table class="table table-hover">
         <thead>
           <tr>
@@ -53,8 +52,7 @@ export default function Expense() {
           </DetailConsumer>
         </tbody>
       </table>
-      ;
-    </div>
+    </ExpenseWrap>
   );
 }
 const StatusIndicator = styled.div`
@@ -62,7 +60,26 @@ const StatusIndicator = styled.div`
   height: 15px;
   border-radius: 10px;
   background-color: ${(props) => props.color};
-  /* margin-left: 0rem; */
   position: absolute;
-  right: 7rem;
+`;
+
+const ExpenseWrap = styled.div`
+  .link-row {
+    display: inline-flex;
+    font-size: 1rem;
+
+    padding: 1rem 0rem;
+    /* position: absolute; */
+    background: transparent;
+  }
+
+  .link-row:hover {
+    background: #00adee;
+    color: white;
+    /* padding: 0.5rem 0.5rem 0.5rem 2rem;   */
+    text-decoration: none;
+  }
+  thead {
+    /* position: absolute; */
+  }
 `;

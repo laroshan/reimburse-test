@@ -61,7 +61,7 @@ const SideWrapper = styled.nav`
     text-decoration: none;
   }
   @media (min-width: 576px) {
-    width: 20rem;
+    width: 18rem;
   }
   @media (max-width: 1000px) {
     display: ${(props) => (props.open ? "none" : "flex")};

@@ -1,5 +1,6 @@
 export const ExpenseData = [
   {
+    id: 1,
     report: "Expense 1",
     date: "25 February 2020",
     techlead: "Mr.Nuwan",
@@ -10,6 +11,7 @@ export const ExpenseData = [
     },
   },
   {
+    id: 2,
     report: "Expense 2",
     date: "31 February 2020",
     techlead: "Mr.NuwaElita",
@@ -20,6 +22,7 @@ export const ExpenseData = [
     },
   },
   {
+    id: 3,
     report: "Expense 3",
     date: "2 February 2020",
     techlead: "Mr.Nuwan",

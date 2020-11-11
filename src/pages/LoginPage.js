@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../logos/logo.svg";
 import styled from "styled-components";
 import InputBox from "../components/LoginPage/InputBox";
+import Footer from "../components/Footer";
 
 export default function LoginPage() {
   return (
@@ -22,6 +23,7 @@ export default function LoginPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </LoginWrap>
   );
 }

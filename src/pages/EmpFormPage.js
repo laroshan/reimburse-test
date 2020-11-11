@@ -51,13 +51,17 @@ export default function EmpFormPage() {
 }
 
 const CardWrapper = styled.div`
-  left: 100px;
+  //left: 50rem;
   align-items: center;
-  padding-top: 10rem;
+  padding-top: 7rem;
   .card {
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease-in;
     height: 100%;
+    left: 6rem;
+    @media (max-width: 1000px) {
+      left: 0rem;
+    }
   }
 
   .card:hover {
@@ -68,8 +72,9 @@ const CardWrapper = styled.div`
   .card-img-top {
     transition: all 0.3s ease-in;
     height: 250px;
-    @media (max-width: 900px) {
+    @media (max-width: 1000px) {
       height: 200px;
+      left: 0rem;
     }
   }
   .card:hover .card-img-top {
@@ -88,6 +93,6 @@ const CardWrapper = styled.div`
     text-decoration: none;
   }
   @media (max-width: 900px) {
-    padding-top: 10rem;
+    padding-top: 8rem;
   }
 `;

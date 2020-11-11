@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { linkData } from "./linkData";
 import { ExpenseData } from "./ExpenseData";
+import { socialData } from "./socialData";
 
 const DetailContext = React.createContext();
 
@@ -12,6 +13,7 @@ class DetailProvider extends Component {
     open: true,
     // isLogged: false,
     expenses: ExpenseData,
+    socialLinks: socialData,
   };
   handleNavbar = () => {
     this.setState({ navbarOpen: !this.state.navbarOpen });
