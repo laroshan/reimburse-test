@@ -30,20 +30,18 @@ export default function Expense() {
                         <td>{expense.techlead}</td>
                         <td>{expense.status.message}</td>
                         <td>
-                          <span>
-                            {(() => {
-                              switch (expense.status.level) {
-                                case 1:
-                                  return <StatusIndicator color="#F17E7E" />;
-                                case 2:
-                                  return <StatusIndicator color="#FFD056" />;
-                                case 3:
-                                  return <StatusIndicator color="#75C282" />;
-                                default:
-                                  return <StatusIndicator color="#AAA5A5" />;
-                              }
-                            })()}
-                          </span>
+                          {(() => {
+                            switch (expense.status.level) {
+                              case 1:
+                                return <StatusIndicator color="#F17E7E" />;
+                              case 2:
+                                return <StatusIndicator color="#FFD056" />;
+                              case 3:
+                                return <StatusIndicator color="#75C282" />;
+                              default:
+                                return <StatusIndicator color="#AAA5A5" />;
+                            }
+                          })()}
                         </td>
                       </tr>
                     ))}
@@ -62,7 +60,7 @@ const StatusIndicator = styled.div`
   height: 15px;
   border-radius: 10px;
   background-color: ${(props) => props.color};
-  position: absolute;
+  /* position: absolute; */
 `;
 
 const ExpenseWrap = styled.div`
