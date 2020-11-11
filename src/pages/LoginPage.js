@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../logos/logo.svg";
 import styled from "styled-components";
 import InputBox from "../components/LoginPage/InputBox";
-import Footer from "../components/Footer";
+import BcgImg from "../images/back.svg";
 
 export default function LoginPage() {
   return (
@@ -23,7 +23,6 @@ export default function LoginPage() {
           </div>
         </div>
       </div>
-      <Footer />
     </LoginWrap>
   );
 }
@@ -41,6 +40,17 @@ const LineWrap = styled.div`
 `;
 
 const LoginWrap = styled.div`
+  background-image: url(${BcgImg});
+  min-height: 90vh;
+  min-width: 100vw;
+  background-position-y: 2rem;
+  color: #f5f5f5;
+  background-position: center;
+  background-size: cover;
+  /* position: absolute; */
+  background-position-x: 2px;
+  background-position-y: 4px;
+
   .container {
     padding: 5rem;
   }

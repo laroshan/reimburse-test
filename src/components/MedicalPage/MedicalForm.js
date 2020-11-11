@@ -250,6 +250,6 @@ export default class MedicalForm extends React.Component {
 
 const MedicalWrapper = styled.div`
   position: relative;
-
+  padding: 1rem;
   width: 100%;
 `;

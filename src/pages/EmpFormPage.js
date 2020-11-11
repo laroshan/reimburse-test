@@ -54,6 +54,7 @@ const CardWrapper = styled.div`
   //left: 50rem;
   align-items: center;
   padding-top: 7rem;
+  padding-bottom: 3rem;
   .card {
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease-in;
