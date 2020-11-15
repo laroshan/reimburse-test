@@ -4,7 +4,7 @@ import styled from "styled-components";
 export default function Expense() {
   return (
     <ExpenseWrap>
-      <div className="container table-responsive">
+      <div className="container table-responsive etable">
         <table class="table table-hover">
           <thead>
             <tr>
@@ -66,5 +66,8 @@ const StatusIndicator = styled.div`
 const ExpenseWrap = styled.div`
   thead {
     /* position: absolute; */
+  }
+  .etable {
+    /* padding-left: 5rem; */
   }
 `;

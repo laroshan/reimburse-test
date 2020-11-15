@@ -48,7 +48,6 @@ const LoginWrap = styled.div`
   background-position: center;
   background-size: cover;
   /* position: absolute; */
-  background-position-x: 2px;
   background-position-y: 4px;
 
   .container {

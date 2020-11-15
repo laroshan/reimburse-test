@@ -3,7 +3,6 @@ import {
   FaFileAlt,
   FaListAlt,
   FaNewspaper,
-  FaMale,
 } from "react-icons/fa";
 
 export const linkData = [
@@ -21,15 +20,9 @@ export const linkData = [
     path: "/empReport",
     active: false,
   },
+
   {
     id: 3,
-    text: "Techlead deatils",
-    icon: <FaMale />,
-    path: "/medicalForm",
-    active: false,
-  },
-  {
-    id: 4,
     text: "Employee details",
     icon: <FaAddressCard />,
 
@@ -37,7 +30,7 @@ export const linkData = [
     active: false,
   },
   {
-    id: 5,
+    id: 4,
     text: "report",
     icon: <FaFileAlt />,
     path: "/ff",
