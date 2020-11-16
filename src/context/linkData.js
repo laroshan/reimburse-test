@@ -15,7 +15,7 @@ export const linkData = [
   },
   {
     id: 2,
-    text: "Expense",
+    text: "Progress",
     icon: <FaListAlt />,
     path: "/empReport",
     active: false,
@@ -26,14 +26,14 @@ export const linkData = [
     text: "Employee details",
     icon: <FaAddressCard />,
 
-    path: "/expenseform",
+    path: "/empDetail",
     active: false,
   },
   {
     id: 4,
     text: "report",
     icon: <FaFileAlt />,
-    path: "/ff",
+    path: "/empAllReport",
     active: false,
   },
 ];

@@ -19,7 +19,7 @@ const HeroWrapper = styled.div`
   align-items: center;
   justify-content: center;
   top: 60px;
-  min-height: 40vh;
+  min-height: 80vh;
   min-width: 40vw;
   color: white;
   background: url(${(props) => props.img});

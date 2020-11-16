@@ -44,7 +44,7 @@ export default function SideBar() {
 const SideWrapper = styled.nav`
   position: fixed;
   top: 70px;
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   background: rgba(159, 159, 160, 0.1);
   z-index: 1;
@@ -69,6 +69,8 @@ const SideWrapper = styled.nav`
   @media (max-width: 1000px) {
     display: ${(props) => (props.open ? "none" : "flex")};
     background: rgba(255, 255, 255, 1.2);
+    width: 14rem;
+    font-size: 1rem;
   }
   ul {
     list-style-type: none;

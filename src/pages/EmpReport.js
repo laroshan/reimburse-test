@@ -9,7 +9,7 @@ export default function EmpReport() {
     <>
       <NavBar />
       <SideBar />
-      <div className="container">
+      <div className="container px-3">
         <Title>Expense Reimburse</Title>
         <Expense />
         <Title>Medical Reimburse</Title>
