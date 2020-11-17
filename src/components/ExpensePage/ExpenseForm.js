@@ -246,6 +246,6 @@ export default class ExpenseForm extends Component {
 
 const MedicalWrapper = styled.div`
   position: relative;
-
+  padding-bottom: 4rem;
   width: 100%;
 `;

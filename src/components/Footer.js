@@ -9,7 +9,7 @@ export default function Footer() {
         const { socialLinks } = value;
         return (
           <FooterWrapper>
-            <div className="container py-3">
+            <div className="container py-2">
               <div className="row">
                 <div className="col-md-6">
                   <p className="text-capitalize">
@@ -39,10 +39,14 @@ export default function Footer() {
 const FooterWrapper = styled.footer`
   background: #ea262a;
   color: white;
-  /* position: absolute; */
+  position: fixed;
   left: 0;
   bottom: 0;
   right: 0;
+  width: 100%;
+  padding: 0;
+
+  /* height: 50px; */
   .icon {
     font-size: 1.5rem;
     color: white;

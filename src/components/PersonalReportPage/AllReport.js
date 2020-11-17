@@ -6,9 +6,9 @@ export default function AllReport() {
   return (
     <>
       <AllReportWrapper>
-        <div class="container ">
-          <table class="table table-hover table-responsive">
-            <thead class="">
+        <div className="container">
+          <table className="table table-hover table-responsive">
+            <thead className="">
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">Report Title</th>
@@ -37,30 +37,30 @@ export default function AllReport() {
                 }}
               </DetailConsumer>
             </tbody>
-          </table>{" "}
-          <div class="footer p-0">
+          </table>
+          <div className="footer p-0">
             <nav aria-label="...">
-              <ul class="pagination ">
-                <li class="page-item disabled">
-                  <span class="page-link">Previous</span>
+              <ul className="pagination ">
+                <li className="page-item disabled">
+                  <span className="page-link">Previous</span>
                 </li>
-                <li class="page-item">
-                  <a class="page-link" href="a">
+                <li className="page-item">
+                  <a className="page-link" href="a">
                     1
                   </a>
                 </li>
-                <li class="page-item active">
-                  <span class="page-link">
-                    2<span class="sr-only">(current)</span>
+                <li className="page-item active">
+                  <span className="page-link">
+                    2<span className="sr-only">(current)</span>
                   </span>
                 </li>
-                <li class="page-item">
-                  <a class="page-link" href="a">
+                <li className="page-item">
+                  <a className="page-link" href="a">
                     3
                   </a>
                 </li>
-                <li class="page-item">
-                  <a class="page-link" href="a">
+                <li className="page-item">
+                  <a className="page-link" href="a">
                     Next
                   </a>
                 </li>
@@ -74,7 +74,15 @@ export default function AllReport() {
 }
 const AllReportWrapper = styled.div`
   /* padding-left: 10rem; */
-  margin-left: 400px;
+  margin-left: 390px;
+
+  /* justify-content: center; */
+  text-align: center;
+  /* display: inline-block;
+  vertical-align: middle; */
+  display: flex;
   align-items: center;
-  justify-content: center;
+  @media (max-width: 1000px) {
+    margin-left: 0;
+  }
 `;

@@ -7,7 +7,7 @@ export default function ProductFilter() {
       {(value) => {
         const { search, company, price, handleChange } = value;
         return (
-          <div className="row my-5">
+          <div className="row my-4">
             <div className="col-6 mx-auto">
               <FilterWrapper>
                 {/* report search */}
@@ -88,11 +88,11 @@ export default function ProductFilter() {
                 </div>
                 {/* find by date */}
                 <div>
-                  <label htmlFor="date">Date From -</label>
+                  <label htmlFor="date">Date From</label>
                   <input
                     type="date"
                     name="date"
-                    id="date"
+                    id="datefrom"
                     onChange={handleChange}
                     value={search}
                     className="filter-item"
@@ -104,7 +104,7 @@ export default function ProductFilter() {
                   <input
                     type="date"
                     name="date"
-                    id="date"
+                    id="dateto"
                     onChange={handleChange}
                     value={search}
                     className="filter-item"

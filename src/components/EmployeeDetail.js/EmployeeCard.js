@@ -6,44 +6,44 @@ export default function EmployeeCard() {
   return (
     <>
       <CardWrapper>
-        <div class="container emp-profile">
+        <div className="container emp-profile">
           <form method="post">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="profile-img">
+            <div className="row">
+              <div className="col-md-4">
+                <div className="profile-img">
                   <img src={Profile} alt="" />
-                  <div class="file btn btn-lg btn-primary">
+                  <div className="file btn btn-lg btn-primary">
                     Change Photo
                     <input type="file" name="file" />
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="profile-head">
+              <div className="col-md-6">
+                <div className="profile-head">
                   <h5>Jhon David</h5>
                   <h6>Web Developer and Designer</h6>
 
-                  <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item">
-                      <div class="nav-link active" id="home-tab">
+                  <ul className="nav nav-tabs" id="myTab" role="tablist">
+                    <li className="nav-item">
+                      <div className="nav-link active" id="home-tab">
                         About
                       </div>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-md-2">
+              <div className="col-md-2">
                 <input
                   type="submit"
-                  class="profile-edit-btn"
+                  className="profile-edit-btn"
                   name="btnAddMore"
                   value="Edit Profile"
                 />
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="profile-work">
+            <div className="row">
+              <div className="col-md-4">
+                <div className="profile-work">
                   <p>Projects</p>
                   <a href="/a">Browser Sessions</a>
                   <br />
@@ -59,103 +59,103 @@ export default function EmployeeCard() {
                   <br />
                 </div>
               </div>
-              <div class="col-md-8">
-                <div class="tab-content profile-tab" id="myTabContent">
+              <div className="col-md-8">
+                <div className="tab-content profile-tab" id="myTabContent">
                   <div
-                    class="tab-pane fade show active"
+                    className="tab-pane fade show active"
                     id="home"
                     role="tabpanel"
                     aria-labelledby="home-tab"
                   >
-                    <div class="row">
-                      <div class="col-md-6">
+                    <div className="row">
+                      <div className="col-md-6">
                         <label>User Id</label>
                       </div>
-                      <div class="col-md-6">
+                      <div className="col-md-6">
                         <p>JD2346</p>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-md-6">
+                    <div className="row">
+                      <div className="col-md-6">
                         <label>Name</label>
                       </div>
-                      <div class="col-md-6">
+                      <div className="col-md-6">
                         <p>Jhon David</p>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-md-6">
+                    <div className="row">
+                      <div className="col-md-6">
                         <label>Email</label>
                       </div>
-                      <div class="col-md-6">
+                      <div className="col-md-6">
                         <p>jhondavid@gmail.com</p>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-md-6">
+                    <div className="row">
+                      <div className="col-md-6">
                         <label>Phone</label>
                       </div>
-                      <div class="col-md-6">
+                      <div className="col-md-6">
                         <p>077 456 7890</p>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-md-6">
+                    <div className="row">
+                      <div className="col-md-6">
                         <label>Profession</label>
                       </div>
-                      <div class="col-md-6">
+                      <div className="col-md-6">
                         <p>Web Developer and Designer</p>
                       </div>
                     </div>
                   </div>
                   <div
-                    class="tab-pane fade"
+                    className="tab-pane fade"
                     id="profile"
                     role="tabpanel"
                     aria-labelledby="profile-tab"
                   >
-                    <div class="row">
-                      <div class="col-md-6">
+                    <div className="row">
+                      <div className="col-md-6">
                         <label>Experience</label>
                       </div>
-                      <div class="col-md-6">
+                      <div className="col-md-6">
                         <p>Expert</p>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-md-6">
+                    <div className="row">
+                      <div className="col-md-6">
                         <label>Hourly Rate</label>
                       </div>
-                      <div class="col-md-6">
+                      <div className="col-md-6">
                         <p>10$/hr</p>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-md-6">
+                    <div className="row">
+                      <div className="col-md-6">
                         <label>Total Projects</label>
                       </div>
-                      <div class="col-md-6">
+                      <div className="col-md-6">
                         <p>230</p>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-md-6">
+                    <div className="row">
+                      <div className="col-md-6">
                         <label>English Level</label>
                       </div>
-                      <div class="col-md-6">
+                      <div className="col-md-6">
                         <p>Expert</p>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-md-6">
+                    <div className="row">
+                      <div className="col-md-6">
                         <label>Availability</label>
                       </div>
-                      <div class="col-md-6">
+                      <div className="col-md-6">
                         <p>6 months</p>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-md-12">
+                    <div className="row">
+                      <div className="col-md-12">
                         <label>Your Bio</label>
                         <br />
                         <p>Your detail description</p>
