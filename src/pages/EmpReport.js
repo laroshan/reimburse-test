@@ -9,12 +9,14 @@ export default function EmpReport() {
     <>
       <NavBar />
       <SideBar />
-      <div className="container px-3">
-        <Title>Expense Reimburse</Title>
-        <Expense />
-        <Title>Medical Reimburse</Title>
-        <Expense />
-      </div>
+      <EmpReportWrapper>
+        <div className="container px-3">
+          <Title>Expense Reimburse</Title>
+          <Expense />
+          <Title>Medical Reimburse</Title>
+          <Expense />
+        </div>
+      </EmpReportWrapper>
     </>
   );
 }
@@ -26,4 +28,10 @@ const Title = styled.h1`
   display: flex;
   align-items: center;
   padding: 1.5rem;
+`;
+const EmpReportWrapper = styled.div`
+  padding-left: 10rem;
+  @media (max-width: 1000px) {
+    padding-left: 1rem;
+  }
 `;

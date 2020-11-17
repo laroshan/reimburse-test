@@ -10,7 +10,7 @@ export default function ProductFilter() {
           <div className="row my-5">
             <div className="col-6 mx-auto">
               <FilterWrapper>
-                {/* text search */}
+                {/* report search */}
                 <div>
                   <label htmlFor="search">Search Report</label>
                   <input
@@ -86,8 +86,30 @@ export default function ProductFilter() {
                     <option value="rejected">Rejected</option>
                   </select>
                 </div>
+                {/* find by date */}
+                <div>
+                  <label htmlFor="date">Date From -</label>
+                  <input
+                    type="date"
+                    name="date"
+                    id="date"
+                    onChange={handleChange}
+                    value={search}
+                    className="filter-item"
+                  />
+                </div>
 
-                {/* end of free shippping */}
+                <div>
+                  <label htmlFor="date">Date to</label>
+                  <input
+                    type="date"
+                    name="date"
+                    id="date"
+                    onChange={handleChange}
+                    value={search}
+                    className="filter-item"
+                  />
+                </div>
               </FilterWrapper>
             </div>
           </div>

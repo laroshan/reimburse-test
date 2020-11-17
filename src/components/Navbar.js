@@ -3,7 +3,7 @@ import logo from "../logos/logo2.svg";
 import styled from "styled-components";
 import { DetailConsumer } from "../context";
 import { FaBell, FaBars } from "react-icons/fa";
-import Profile from "../images/Profile.JPG";
+import Profile from "../images/Profile.jpg";
 export default function NavBar() {
   // const [click, setClick] = useState(true);
   //dropdown

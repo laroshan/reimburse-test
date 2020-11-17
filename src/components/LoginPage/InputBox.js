@@ -66,6 +66,7 @@ const TitleWrapper = styled.div`
     text-align: center;
     font-size: 80px;
     padding: 2rem;
+    color: #dd5c5e;
   }
   h3 {
     color: #ff8d8d;
