@@ -49,7 +49,7 @@ export default function EmployeeCard() {
                   <br />
                   <a href="a">Reimburser</a>
                   <br />
-                  <a href="a">Bootply Profile</a>
+
                   <p>SKILLS</p>
                   <a href="a">Web Designer</a>
                   <br />

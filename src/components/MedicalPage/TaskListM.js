@@ -70,6 +70,20 @@ const TaskList = (props) => {
           </div>
         </td>
         <td>
+          {/* <div className="mb-3">
+            <div className="form-file" id="formcheck-api-regular">
+              <div className="form-file-input" />
+            </div>
+          </div> */}
+          {""}
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="customFile" />
+            <label class="custom-file-label" for="customFile">
+              Choose file
+            </label>
+          </div>
+        </td>
+        <td>
           {/* {idx === 0 ? (
             <button
               onClick={() => props.add()}

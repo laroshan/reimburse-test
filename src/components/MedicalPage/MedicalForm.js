@@ -151,9 +151,9 @@ export default class MedicalForm extends React.Component {
                             id="inlineFormCustomSelect"
                           >
                             <option selected>Dependent...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            <option value="1">Wife</option>
+                            <option value="2">Sister</option>
+                            <option value="3">Mother</option>
                           </select>
                         </div>
                       </div>
@@ -209,7 +209,8 @@ export default class MedicalForm extends React.Component {
                           <th className="required">Date</th>
                           <th className="required">Description</th>
                           <th>Place</th>
-                          <th>Receipt N0.</th>
+                          <th>Invoice N0.</th>
+                          <th>Invoice</th>
                           <th>Receipt</th>
                           <th></th>
                         </tr>

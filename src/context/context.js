@@ -14,7 +14,9 @@ class DetailProvider extends Component {
     // isLogged: false,
     expenses: ExpenseData,
     socialLinks: socialData,
+    price: 0,
   };
+
   handleNavbar = () => {
     this.setState({ navbarOpen: !this.state.navbarOpen });
   };
@@ -28,6 +30,19 @@ class DetailProvider extends Component {
   handleLogin() {
     this.setState({ isLogged: true });
   }
+  handleChange = (event) => {
+    const name = event.target.name;
+    const value =
+      event.target.type === "checkbox"
+        ? event.target.checked
+        : event.target.value;
+    this.setState(
+      {
+        [name]: value,
+      },
+      this.sortData
+    );
+  };
   render() {
     return (
       <DetailContext.Provider
@@ -37,6 +52,7 @@ class DetailProvider extends Component {
           handleSidebar: this.handleSidebar,
           handleOpen: this.handleOpen,
           handelLogin: this.handleLogin,
+          handleChange: this.handleChange,
         }}
       >
         {this.props.children}{" "}

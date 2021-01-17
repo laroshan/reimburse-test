@@ -43,7 +43,7 @@ export default function ProductFilter() {
                 <div>
                   <label htmlFor="price">
                     <p className="mb-2">
-                      amount : <span>$ {price}</span>
+                      amount : <span>Rs. {price}</span>
                     </p>
                   </label>
                   <input

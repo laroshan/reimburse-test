@@ -41,14 +41,14 @@ const LineWrap = styled.div`
 
 const LoginWrap = styled.div`
   background-image: url(${BcgImg});
-  min-height: 92vh;
+  min-height: 95vh;
   min-width: 100vw;
   background-position-y: 2rem;
   color: #f5f5f5;
   background-position: center;
   background-size: cover;
   /* position: absolute; */
-  background-position-y: 2px;
+  background-position-y: 10px;
 
   .container {
     padding: 5rem;

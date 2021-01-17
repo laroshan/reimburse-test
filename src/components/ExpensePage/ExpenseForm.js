@@ -197,8 +197,8 @@ export default class ExpenseForm extends Component {
                           <th className="required">Date</th>
                           <th className="required">Description</th>
                           <th>Place</th>
-                          <th>Receipt N0.</th>
-                          <th>Receipt</th>
+                          <th>Invoice N0.</th>
+                          <th>Invoice</th>
                           <th></th>
                         </tr>
                       </thead>
